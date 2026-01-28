@@ -1,9 +1,11 @@
 import lexer
 import interpreter 
+import os
 
 print("--ALPHASCRIPT RUNTIME TERMINAL--")
 source = None
 while True:
+    print("Input file path: (full)")
     filePath = input()
     if not filePath:
         print("Could not find file")
@@ -13,8 +15,8 @@ while True:
 with open(filePath, "r", encoding="utf-8") as file:
     source = file.read()
 
-lexer.process(source)
-
+two = lexer.process(source)
+interpreter.exec(two)
 
 
 
