@@ -1,7 +1,7 @@
 as.add(1, 4)
-
-
-
+print("hi")
+x = 4
+print(x)
 as.mul(10043, 13)
 
 

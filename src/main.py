@@ -5,7 +5,7 @@ import os
 print("--ALPHASCRIPT RUNTIME TERMINAL--")
 source = None
 while True:
-    print("Input file path: (full)")
+    print("Input file path (full):")
     filePath = input()
     if not filePath:
         print("Could not find file")
